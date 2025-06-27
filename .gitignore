@@ -1,0 +1,28 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+venv/
+.env
+
+# SQLite database
+*.db
+
+# VS Code settings
+.vscode/
+
+# Log or output files
+*.log
+*.out
+
+# OS-specific junk
+.DS_Store
+Thumbs.db
+
+# Git itself
+.git/
+
+
+
