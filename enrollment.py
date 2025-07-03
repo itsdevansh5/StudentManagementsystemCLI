@@ -1,4 +1,4 @@
-from db_config import get_connection
+from db.db_config import get_connection
 
 def enroll_student(reg_no, course_id,enrollment_date):
     conn = get_connection()
