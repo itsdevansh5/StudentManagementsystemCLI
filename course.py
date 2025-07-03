@@ -1,4 +1,4 @@
-from db_config import get_connection
+from db.db_config import get_connection
 
 def add_course(name, course_id):
     conn = get_connection()
