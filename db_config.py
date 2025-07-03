@@ -1,2 +1,14 @@
-a=int(input())
-print("hello")
+import mysql.connector
+from mysql.connector import Error
+
+def get_connection():
+    conn=mysql.connector.connection(
+    host="localhost",
+    user="root",
+    password="devanshsrm@2027",
+    database="student_db"
+    )
+    return conn
+    
+    
+    
