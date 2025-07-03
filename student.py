@@ -1,7 +1,7 @@
 from db.db_config import get_connection
 
 def add_student(name,reg_no,DOB,gender,address,Mob):
-    conn=get_connection
+    conn=get_connection()
     cursor=conn.cursor()
     cursor.execute("Insert into students values (%s,%s,%s,%s,%s,%s)",(name,reg_no,DOB,gender,address,Mob))
     conn.commit()
