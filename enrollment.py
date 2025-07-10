@@ -3,7 +3,7 @@ from db.db_config import get_connection
 def enroll_student(reg_no, course_id,enrollment_date):
     conn = get_connection()
     cursor = conn.cursor()
-    cursor.execute("INSERT INTO enrollment (reg_no, course_id,enrollment_date) VALUES (%s, %s)", (reg_no, course_id,enrollment_date))
+    cursor.execute("INSERT INTO enrollment (reg_no, course_id,enrollment_date) VALUES (%s, %s,%s)", (reg_no, course_id,enrollment_date))
     conn.commit()
     conn.close()
 
