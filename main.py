@@ -44,7 +44,7 @@ def menu():
             view_courses()
 
         elif choice == "6":
-            reg_no = int(input("Reg_NO: "))
+            reg_no = input("Reg_NO: ")
             course_id = int(input("Course ID: "))
             enrollment_date=date.today()
             enroll_student(student_id, course_id,enrollment_date)
