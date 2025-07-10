@@ -11,10 +11,10 @@ def view_enrollments():
     conn = get_connection()
     cursor = conn.cursor()
     cursor.execute("""
-        SELECT s.name, c.name FROM enrollment e
+        SELECT s.name, c.name ,e.enrollment_date FROM enrollment e
         JOIN students s ON e.reg_no = s.reg_no
         JOIN courses c ON e.course_id = c.course_id
     """)
     for row in cursor.fetchall():
-        print(f"Student: {row[0]}, Course: {row[1]}")
+        print(f"Student: {row[0]}, Course: {row[1]}, Date: {row[2]}")
     conn.close()
